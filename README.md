@@ -11,7 +11,9 @@ The goal of the agent is position the end of the arm to be inside of the target 
 The environment is considered solved, when the agent achieves an average reward of 30 over 100 episodes and all agents
 
 ## Getting Started
-To start, you need to download the environment by clicking on the link.
+First, start off by cloning the DRLND Repository from this link: https://github.com/udacity/deep-reinforcement-learning#dependencies Follow the instructions to install the environment and all the packages needed to run the environment
+
+Then, you need to download the environment by clicking on the link.
 
 Linux: https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip
 
@@ -22,3 +24,9 @@ Windows (32-bit): https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Re
 Windows (64-bit): https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip
 
 Then after downloading the repository, unzip the file into the folder, making sure the file name in the second cell of reacher.ipyb matches the download
+
+All the necessary packages except for the unity agents package are located in the requirements.txt file of this repository. The unity agents package must be installed by following the DRLND Repository installation directions
+
+## Instructions
+Open Navigation.ipyb
+To train the code, set the variable num_episodes in cell 7 to how long you want the agent to train. It took ~800 episodes to reach a mean score of 13 over 100 episodes. Then run the whole notebook. Once its finished training, it should save its weights and graph the agent's learning curve.
